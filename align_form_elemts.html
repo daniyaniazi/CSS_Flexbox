@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        p,
+        H3 {
+            text-align: center;
+        }
+
+        #wrapper {
+            background-color: silver;
+            list-style: none;
+            margin: 50px;
+            padding: 20px;
+        }
+
+        #wrapper li {
+            display: flex;
+            padding: 5px 0px;
+            justify-content: flex-end;
+        }
+
+        #wrapper li label {
+            flex: 1;
+
+        }
+
+        #wrapper li input {
+            flex: 3;
+        }
+
+        @media screen and (max-width: 400px) {
+                #wrapper li{
+                    flex-direction: column;
+                }
+        @media screen and (min-width: 1200px) {
+
+            #wrapper li input {
+                flex: 6;
+            }
+
+               
+            }
+    </style>
+</head>
+
+<body>
+    <h3>ALIGN FORM ELEMNTS</h3>
+    <form>
+        <UL id="wrapper">
+            <li>
+                <label for="name"> Name</label>
+                <input type="text" name="name" id="name">
+            </li>
+            <li>
+                <label for="classname">Class Name</label>
+                <input type="text" name="classname" id="classname">
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </li>
+            <li>
+                <button type="submit">save</button>
+            </li>
+        </UL>
+
+    </form>
+</body>
+
+</html>
